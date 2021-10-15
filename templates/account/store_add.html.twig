@@ -1,0 +1,57 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un commerce - J'Trouve mon commerçant{% endblock %}
+{% block menu %}{% endblock %}
+{% block body %}
+
+
+<div class="container-add-store">
+
+        <div class="add-store-head">
+            <h1 class="title-account"><img src="/images/iconNavigation/store.png" width="50px " alt="icon-store"> &ensp;Gérer mes
+                commerces</h1>
+            <a class="nav-account-back" href="{{ path('account_store')}}">Retour</a>    
+            <p class="paraph-account"> Merci de renseignez les informations relatives à votre commerce.</p><br>
+            {{ form_start(form) }}
+            <div class="form-error">{{ form_errors(form) }}</div>
+            {{ form_label(form.picture, 'Télécharger la photo de votre commerce', {'label_attr': {'class': 'foo-form'}})
+            }}{{ form_widget(form.picture) }}
+            {{ form_row(form.store_activity) }}<br><br>
+        </div>    
+
+        <!--Form-->
+        <div class ="add-form-first">
+            {{ form_row(form.name, {'label': 'Nom du commerce'}, {'attr': {'class': 'name'}}) }}
+            {{ form_row(form.road_number, {'label': 'Numéro de rue'}, {'attr': {'class': 'road_number'}}) }}
+            {{ form_row(form.address, {'label': 'Nom de rue'}, {'attr': {'class': 'address'}}) }}
+            {{ form_row(form.postal_code, {'label': 'Code postal'}, {'attr': {'class': 'postal_code'}}) }}
+            {{ form_row(form.city, {'label': 'Ville'}, {'attr': {'class': 'city'}}) }}
+            {{ form_row(form.siret, {'label': 'Siret'}, {'attr': {'class': 'siret'}}) }}
+            {{ form_row(form.phone, {'label': 'Téléphone'}, {'attr': {'class': 'phone'}}) }}
+            {{ form_row(form.email, {'label': 'E-mail'}, {'attr': {'class': 'email'}}) }}
+            {{ form_label(form.website, 'Site web', {'label_attr': {'class': 'required'}}) }}{{ form_widget(form.website) }}
+
+            {{ form_label(form.open_hours, 'Horaires d\'ouverture', {'label_attr': {'class': 'required'}})
+            }}{{ form_widget(form.open_hours) }}
+        </div>
+
+        <div class="add-form-second">
+            {{ form_label(form.getOpenDays, 'Jours d\'ouverture', {'label_attr': {'class': 'required'}})
+            }}{{ form_widget(form.getOpenDays) }}
+            {{ form_label(form.InformationPayment, 'Modes de paiement acceptés', {'label_attr': {'class': 'required'}})
+            }}{{ form_widget(form.InformationPayment) }}
+            {{ form_label(form.CommercialService, 'Services commerciaux proposés', {'label_attr': {'class': 'required'}})
+            }}{{ form_widget(form.CommercialService) }}
+        </div>
+
+        <div class="add-description">
+            {{ form_row(form.description, {'label': 'Description de l\'activité'}, {'attr': {'class': 'description'}}) }}
+        </div>
+        
+        <div class="btn-add">
+            <button class="submit-add" type="submit">Enregistrer</button>
+        </div>
+
+    {{ form_end(form) }}
+</div>
+    {% endblock %}

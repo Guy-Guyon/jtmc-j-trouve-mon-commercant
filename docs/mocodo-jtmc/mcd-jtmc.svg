@@ -1,0 +1,144 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="498" height="482" view_box="0 0 498 482"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Thu, 05 Aug 2021 16:52:57</desc>
+
+<rect id="frame" x="0" y="0" width="498" height="482" fill="#ffffbf" stroke="none" stroke-width="0"/>
+
+<!-- Association CAN HAVE -->
+<line x1="272" y1="228" x2="413" y2="228" stroke="#f46d43" stroke-width="2"/>
+<text x="322" y="245.0" fill="#3288bd" font-family="Verdana" font-size="12">n,n</text>
+<line x1="413" y1="34" x2="413" y2="228" stroke="#f46d43" stroke-width="2"/>
+<text x="418.0" y="76" fill="#3288bd" font-family="Verdana" font-size="12">n,n</text>
+<g id="association-CAN HAVE">
+	<path d="M 438 203 a 14 14 90 0 1 14 14 V 228 h -78 V 217 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 452 228.0 v 11 a 14 14 90 0 1 -14 14 H 388 a 14 14 90 0 1 -14 -14 V 228.0 H 78" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="374" y="203" width="78" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="374" y1="228" x2="452" y2="228" stroke="#f46d43" stroke-width="1"/>
+	<text x="381" y="220.7" fill="#000000" font-family="Verdana" font-size="12">CAN HAVE</text>
+</g>
+
+<!-- Association CAN BE CONNECTED -->
+<line x1="272" y1="228" x2="272" y2="422" stroke="#f46d43" stroke-width="2"/>
+<text x="277.0" y="389" fill="#3288bd" font-family="Verdana" font-size="12">1,1</text>
+<line x1="413" y1="422" x2="272" y2="422" stroke="#f46d43" stroke-width="2"/>
+<text x="353" y="439.0" fill="#3288bd" font-family="Verdana" font-size="12">1,n</text>
+<g id="association-CAN BE CONNECTED">
+	<path d="M 329 397 a 14 14 90 0 1 14 14 V 422 h -142 V 411 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 343 422.0 v 11 a 14 14 90 0 1 -14 14 H 215 a 14 14 90 0 1 -14 -14 V 422.0 H 142" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="201" y="397" width="142" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="201" y1="422" x2="343" y2="422" stroke="#f46d43" stroke-width="1"/>
+	<text x="208" y="414.7" fill="#000000" font-family="Verdana" font-size="12">CAN BE CONNECTED</text>
+</g>
+
+<!-- Association MUST HAVE -->
+<line x1="272" y1="228" x2="89" y2="228" stroke="#f46d43" stroke-width="2"/>
+<text x="201" y="245.0" fill="#3288bd" font-family="Verdana" font-size="12">n,n</text>
+<line x1="89" y1="422" x2="89" y2="228" stroke="#f46d43" stroke-width="2"/>
+<text x="94.0" y="389" fill="#3288bd" font-family="Verdana" font-size="12">n,n</text>
+<g id="association-MUST HAVE">
+	<path d="M 119 203 a 14 14 90 0 1 14 14 V 228 h -88 V 217 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 133 228.0 v 11 a 14 14 90 0 1 -14 14 H 59 a 14 14 90 0 1 -14 -14 V 228.0 H 88" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="45" y="203" width="88" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="45" y1="228" x2="133" y2="228" stroke="#f46d43" stroke-width="1"/>
+	<text x="52" y="220.7" fill="#000000" font-family="Verdana" font-size="12">MUST HAVE</text>
+</g>
+
+<!-- Association IS OPEN -->
+<line x1="272" y1="228" x2="272" y2="34" stroke="#f46d43" stroke-width="2"/>
+<text x="277.0" y="76" fill="#3288bd" font-family="Verdana" font-size="12">n,n</text>
+<line x1="89" y1="34" x2="272" y2="34" stroke="#f46d43" stroke-width="2"/>
+<text x="135" y="51.0" fill="#3288bd" font-family="Verdana" font-size="12">n,n</text>
+<g id="association-IS OPEN">
+	<path d="M 291 9 a 14 14 90 0 1 14 14 V 34 h -66 V 23 a 14 14 90 0 1 14 -14" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+	<path d="M 305 34.0 v 11 a 14 14 90 0 1 -14 14 H 253 a 14 14 90 0 1 -14 -14 V 34.0 H 66" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+	<rect x="239" y="9" width="66" height="50" fill="none" rx="14" stroke="#f46d43" stroke-width="2"/>
+	<line x1="239" y1="34" x2="305" y2="34" stroke="#f46d43" stroke-width="1"/>
+	<text x="246" y="26.7" fill="#000000" font-family="Verdana" font-size="12">IS OPEN</text>
+</g>
+
+<!-- Entity OPEN DAYS -->
+<g id="entity-OPEN DAYS">
+	<g id="frame-OPEN DAYS">
+		<rect x="48" y="9" width="82" height="25" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+		<rect x="48" y="34.0" width="82" height="25" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+		<rect x="48" y="9" width="82" height="50" fill="none" stroke="#66c2a5" stroke-width="2"/>
+		<line x1="48" y1="34" x2="130" y2="34" stroke="#66c2a5" stroke-width="1"/>
+	</g>
+	<text x="53" y="26.7" fill="#000000" font-family="Verdana" font-size="12">OPEN DAYS</text>
+	<text x="53" y="51.8" fill="#000000" font-family="Verdana" font-size="12">days</text>
+	<line x1="53" y1="54" x2="82" y2="54" stroke="#000000" stroke-width="1"/>
+</g>
+
+<!-- Entity INFORMATION PAYMENT -->
+<g id="entity-INFORMATION PAYMENT">
+	<g id="frame-INFORMATION PAYMENT">
+		<rect x="9" y="397" width="160" height="25" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+		<rect x="9" y="422.0" width="160" height="25" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+		<rect x="9" y="397" width="160" height="50" fill="none" stroke="#66c2a5" stroke-width="2"/>
+		<line x1="9" y1="422" x2="169" y2="422" stroke="#66c2a5" stroke-width="1"/>
+	</g>
+	<text x="14" y="414.7" fill="#000000" font-family="Verdana" font-size="12">INFORMATION PAYMENT</text>
+	<text x="14" y="439.8" fill="#000000" font-family="Verdana" font-size="12">payment types</text>
+	<line x1="14" y1="442" x2="105" y2="442" stroke="#000000" stroke-width="1"/>
+</g>
+
+<!-- Entity COMMERCIAL SERVICE -->
+<g id="entity-COMMERCIAL SERVICE">
+	<g id="frame-COMMERCIAL SERVICE">
+		<rect x="337" y="9" width="152" height="25" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+		<rect x="337" y="34.0" width="152" height="25" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+		<rect x="337" y="9" width="152" height="50" fill="none" stroke="#66c2a5" stroke-width="2"/>
+		<line x1="337" y1="34" x2="489" y2="34" stroke="#66c2a5" stroke-width="1"/>
+	</g>
+	<text x="342" y="26.7" fill="#000000" font-family="Verdana" font-size="12">COMMERCIAL SERVICE</text>
+	<text x="342" y="51.8" fill="#000000" font-family="Verdana" font-size="12">service types</text>
+	<line x1="342" y1="54" x2="422" y2="54" stroke="#000000" stroke-width="1"/>
+</g>
+
+<!-- Entity STORE -->
+<g id="entity-STORE">
+	<g id="frame-STORE">
+		<rect x="227" y="84" width="90" height="25" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+		<rect x="227" y="109.0" width="90" height="263" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+		<rect x="227" y="84" width="90" height="288" fill="none" stroke="#66c2a5" stroke-width="2"/>
+		<line x1="227" y1="109" x2="317" y2="109" stroke="#66c2a5" stroke-width="1"/>
+	</g>
+	<text x="251" y="101.7" fill="#000000" font-family="Verdana" font-size="12">STORE</text>
+	<text x="232" y="126.7" fill="#000000" font-family="Verdana" font-size="12">id</text>
+	<line x1="232" y1="129" x2="244" y2="129" stroke="#000000" stroke-width="1"/>
+	<text x="232" y="143.7" fill="#000000" font-family="Verdana" font-size="12">store activity</text>
+	<text x="232" y="160.7" fill="#000000" font-family="Verdana" font-size="12">picture</text>
+	<text x="232" y="177.7" fill="#000000" font-family="Verdana" font-size="12">name</text>
+	<text x="232" y="194.7" fill="#000000" font-family="Verdana" font-size="12">siret</text>
+	<text x="232" y="211.7" fill="#000000" font-family="Verdana" font-size="12">address</text>
+	<text x="232" y="228.8" fill="#000000" font-family="Verdana" font-size="12">postal code</text>
+	<text x="232" y="245.8" fill="#000000" font-family="Verdana" font-size="12">email</text>
+	<text x="232" y="262.8" fill="#000000" font-family="Verdana" font-size="12">phone</text>
+	<text x="232" y="279.8" fill="#000000" font-family="Verdana" font-size="12">website</text>
+	<text x="232" y="296.8" fill="#000000" font-family="Verdana" font-size="12">open days</text>
+	<text x="232" y="313.8" fill="#000000" font-family="Verdana" font-size="12">open hours</text>
+	<text x="232" y="330.8" fill="#000000" font-family="Verdana" font-size="12">descrition</text>
+	<text x="232" y="347.8" fill="#000000" font-family="Verdana" font-size="12">latitude</text>
+	<text x="232" y="364.8" fill="#000000" font-family="Verdana" font-size="12">longitude</text>
+</g>
+
+<!-- Entity USER -->
+<g id="entity-USER">
+	<g id="frame-USER">
+		<rect x="379" y="371" width="68" height="25" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+		<rect x="379" y="396.0" width="68" height="77" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+		<rect x="379" y="371" width="68" height="102" fill="none" stroke="#66c2a5" stroke-width="2"/>
+		<line x1="379" y1="396" x2="447" y2="396" stroke="#66c2a5" stroke-width="1"/>
+	</g>
+	<text x="396" y="388.7" fill="#000000" font-family="Verdana" font-size="12">USER</text>
+	<text x="384" y="413.7" fill="#000000" font-family="Verdana" font-size="12">email</text>
+	<line x1="384" y1="416" x2="418" y2="416" stroke="#000000" stroke-width="1"/>
+	<text x="384" y="430.8" fill="#000000" font-family="Verdana" font-size="12">password</text>
+	<text x="384" y="447.8" fill="#000000" font-family="Verdana" font-size="12">firstname</text>
+	<text x="384" y="464.8" fill="#000000" font-family="Verdana" font-size="12">lastname</text>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+OPEN DAYS: days
+IS OPEN, nn STORE, nn OPEN DAYS
+COMMERCIAL SERVICE: service types
+
+MUST HAVE, nn STORE, nn INFORMATION PAYMENT
+STORE: id, store activity, picture, name, siret, address, postal code, email, phone, website, open days, open hours, descrition, latitude, longitude
+CAN HAVE, nn STORE, nn COMMERCIAL SERVICE
+
+INFORMATION PAYMENT: payment types
+CAN BE CONNECTED, 11 STORE, 1n USER
+USER: email, password, firstname, lastname

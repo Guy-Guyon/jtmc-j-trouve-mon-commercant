@@ -1,0 +1,1514 @@
+html {
+    height: 100vh;
+}
+
+body {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #2c3e50;
+}
+
+.wrapper {
+    margin: auto;
+    width: 1300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* --------------- Header navigation ---------------*/
+
+.logo {
+    width: 15%;
+    display: flex;
+    padding: 15px 35px;
+}
+
+.logo-mobile {
+    display: none;
+}
+
+.title,
+.header-nav-top-link,
+.menu-search-link,
+.a-menu-search-link {
+    text-transform: capitalize;
+}
+
+.title {
+    margin: 2%;
+    font-weight: 700;
+    color: #20bf6b;
+}
+
+.title-link {
+    text-decoration: none;
+}
+
+.header-nav-top {
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    height: 130px;
+    background: #2c3e50;
+}
+
+.slogan {
+    text-align: center;
+}
+
+.slogan-nav {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.title,
+.slogan,
+.header-nav-top {
+    align-self: center;
+}
+
+.header-nav-top-list {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-top-item {
+    margin: 15px;
+}
+
+.header-nav-top-link,
+.link-account {
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+a.active,
+.header-nav-top-link:hover {
+    transition: .3s;
+    background: #20bf6b;
+}
+
+a.link-account:hover {
+    background: #20bf6b;
+}
+
+.slogan,
+.header-nav-top-link {
+    font-size: 0.9em;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+/* --------------- Hamburger button responsive ---------------*/
+
+.hamburger {
+    width: 300px;
+    display: flex;
+    margin-right: 2%;
+    flex-direction: column;
+}
+
+.hamburger-button {
+    z-index: 20;
+    width: 44px;
+    height: 44px;
+    display: none;
+    cursor: pointer;
+    border: none;
+    font-size: 25px;
+    background: none;
+    color: #20bf6b;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    left: 380px;
+}
+
+.hamburger-overlay {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    transition-duration: 0.5s;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hamburger-sidebar-body {
+    background-color: #2c3e50;
+}
+
+.hamburger-sidebar {
+    top: 0;
+    border-radius: 5px;
+    display: none;
+    width: 325px;
+    height: 550px;
+    z-index: 20;
+    padding: 5%;
+    margin-left: -380px;
+    transition-duration: 0.5s;
+    background-color: #2c3e50;
+    box-shadow: 0px 0px 10px #20bf6b;
+}
+
+
+/* --------------- Left menu ---------------*/
+
+.form-search-engine-city,
+.menu-search-list,
+.promotion {
+    padding: 5%;
+    width: 300px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+}
+
+.form-search-engine-city img {
+    margin-right: 4.5%;
+    position: relative;
+    left: 2px;
+    top: 7px;
+}
+
+.search-city,
+.menu-search-list {
+    color: #20bf6b;
+    font-size: 1em;
+}
+
+.menu-search-item {
+    padding-top: 2%;
+}
+
+.menu-search-item img {
+    margin-right: 4.5%;
+    position: relative;
+    left: 2px;
+    top: 7px;
+}
+
+.menu-search-link {
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.delete-filter {
+    margin-left: 15px;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.delete-filter img {
+    margin-right: 4.5%;
+    position: relative;
+    left: 2px;
+    top: 7px;
+}
+
+/* --------------- Legals mentions ---------------*/
+
+.legals {
+    width: 900px;
+    height: auto;
+    margin: auto;
+    font-size: medium;
+    line-height: 23px;
+}
+
+.headml {
+    text-align: center;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.denomination {
+    margin: 5%;
+    text-align: center;
+}
+
+.legals-content {
+    margin: 5%;
+    text-align: justify;
+}
+
+.headml h1 {
+    text-align: center;
+    color: #20bf6b;
+    text-transform: uppercase;
+    font-size: 1.9em;
+    margin-bottom: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+.mention-title {
+    font-size: 2em;
+    column-span: all;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #20bf6b;
+}
+
+.mention-texte {
+    margin-top: 10px;
+}
+
+.mention-link {
+    color: #20bf6b;
+}
+
+
+/* --------------- Store_Account---------------*/
+
+.title-account {
+    width: 100vh;
+    color: #20bf6b;
+    font-size: 2em;
+    font-weight: 700;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-account-reg {
+    width: auto;
+    height: 650px;
+    margin: auto;
+    margin-bottom: -10px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-account-modif {
+    width: auto;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.paraph-hook-reg {
+    width: 100vh;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.icon-picture-welcome {
+    margin-top: 5%;
+}
+
+.icon-picture-reg {
+    margin-top: 5%;
+}
+
+.icon-picture-con {
+    margin-top: 5%;
+    margin-left: 1.5%;
+}
+
+.required,
+.label-con {
+    font-size: 0.9em;
+    display: flex;
+    margin: 3% 0 1% 0;
+    margin-left: 50px;
+}
+
+input {
+    margin-top: 20px;
+    padding: 3%;
+    margin-left: 20px;
+    border-radius: 3px;
+    border: 2px solid #20bf6b;
+}
+
+#store_picture {
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form-control {
+    border: 0;
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 1%;
+    background-color: #fff;
+}
+
+.container-account {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 15%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-account-con {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 1%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-account-store {
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10%;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-control-con {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-right: 2.5%;
+}
+
+.form-group-reg {
+    margin-right: 5%;
+}
+
+.btn-con {
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    margin-top: 2.8%;
+    color: #fff;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #20bf6b;
+}
+
+.btn-reg {
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    margin-left: 1.5%;
+    margin-top: 2.8%;
+    color: #fff;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #20bf6b;
+}
+
+.btn-modif {
+    border: 0;
+    margin: 0;
+    margin-left: 35%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 25px;
+    color: #fff;
+    font-size: 1em;
+    padding: 5px 15px;
+    border-radius: 3px;
+    background-color: #20bf6b;
+}
+
+.checkbox-con {
+    width: 300px;
+    margin-top: 1%;
+    margin-right: 2.5%;
+    text-align: center;
+    font-style: italic;
+}
+
+.remember-con {
+    font-size: 0.8em;
+}
+
+.website {
+    top: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.btn-add {
+    margin: 2%;
+}
+
+.container-store-read {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container-store-read {
+    height: 655px;
+}
+
+.container-account-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-account-login {
+    height: 100vh;
+    margin-top: 4%;
+    text-align: center;
+}
+
+.adress-store-email {
+    color: #fff;
+}
+
+.store-show-information {
+    width: 30%;
+    padding: 2% 1%;
+    margin: 0 2%;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.title-store {
+    width: 100%;
+}
+
+.title-store,
+.list-title {
+    margin-bottom: 25px;
+    color: #20bf6b;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.subtitle-store {
+    color: #20bf6b;
+    text-transform: capitalize;
+    padding: 1% 0;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.adress-store,
+.mode-payment,
+.days-hours,
+.service {
+    padding: 0.4em 0;
+    font-size: 0.8em;
+}
+
+.store-show-opening,
+.store-show-information-payment,
+.store-show-commercial-service {
+    margin: 2% 0;
+}
+
+.container-store-show {
+    text-align: center;
+    margin: auto;
+    width: 960px;
+    display: flex;
+}
+
+.container-picture-show-desktop {
+    height: 485px;
+    flex: 2.5;
+    position: relative;
+    background-color: #20bf6b;
+    border-radius: 5px;
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+}
+
+.container-picture-show-mobile {
+    display: none;
+    flex: 2.5;
+    position: relative;
+    background-color: #20bf6b;
+    border-radius: 5px;
+    margin: 20px 10px 10px 10px;
+    padding: 10px;
+}
+
+.green-arrow-desktop {
+    position: absolute;
+    top: -0.2%;
+    left: 667.5px;
+}
+
+.adress-store-email {
+    padding: 0.4em 0;
+    font-size: 0.8em;
+}
+
+.store-show-description {
+    font-size: 0.8em;
+}
+
+.container-add-store {
+    margin: auto;
+    width: 900px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-store-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.add-form-first {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10%;
+}
+
+.add-form-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+
+.add-description {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    height: 100px;
+    margin-left: 20%;
+}
+
+.submit-add {
+    text-align: center;
+    height: 35px;
+    border: 0;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    background-color: #20bf6b;
+}
+
+.form-check {
+    width: 100vh;
+    text-align: center;
+}
+
+.form-check-label {
+    font-size: 0.8em;
+}
+
+.store-show-description {
+    padding: 0.5em;
+}
+
+.form-error {
+    color: #ff0000;
+}
+
+.user-account {
+    color: #20bf6b;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+
+.link-account {
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+a.link-account:hover {
+    background: #20bf6b;
+}
+
+.paraph-account {
+    text-align: center;
+    padding: 1%;
+    font-size: 1.1em;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 35px;
+    justify-content: center;
+}
+
+.card {
+    max-width: 220px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #1c1a19;
+    box-shadow: 0px 0px 4px #1c1a19;
+}
+
+.card-content {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.card-text {
+    font-size: 1em;
+}
+
+.card-link {
+    display: flex;
+    display: inline;
+    font-size: 0.9em;
+}
+
+.card-title {
+    font-size: 1.1em;
+    color: #20bf6b;
+    font-weight: bolder;
+}
+
+.card-link-account {
+    color: #fff;
+    text-decoration: none;
+}
+
+a.card-link-account:hover {
+    color: #20bf6b;
+}
+
+.nav-account-link {
+    width: 100vh;
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 1.5%;
+    margin-left: 1.5%;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+a.nav-account-link:hover {
+    color: #20bf6b;
+}
+
+.nav-account-back {
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.7em;
+    text-decoration: none;
+}
+
+a.nav-account-back:hover {
+    color: #20bf6b;
+}
+
+.nav-account-back-2 {
+    color: #fff;
+    font-size: 2em;
+    padding: 2%;
+    text-decoration: none;
+}
+
+a.nav-account-back-2:hover {
+    color: #20bf6b;
+}
+
+.nav-account-here {
+    font-weight: bold;
+    color: #20bf6b;
+    text-decoration: none;
+}
+
+a.nav-account-here:hover {
+    color: #fff;
+}
+
+.submit-log {
+    left: 50px;
+    border: 0;
+    cursor: pointer;
+    color: #20bf6b;
+    background: none;
+    font-size: 1.1em;
+    padding-right: 1%;
+}
+
+.password {
+    margin-top: 1%;
+}
+
+.login-picture {
+    text-align: center;
+}
+
+.login-input {
+    padding: 0.8%;
+}
+
+
+/* --------------- More ---------------*/
+
+.promotion {
+    margin-top: 5%;
+    color: #20bf6b;
+    font-size: 1em;
+    align-self: center;
+}
+
+
+/* --------------- Footer ---------------*/
+
+.footer-nav {
+    width: 100%;
+    height: 50px;
+    padding-top: 1%;
+    text-align: center;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.footer-nav-link {
+    font-size: 0.9em;
+    color: white;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+a.footer-nav-link:hover {
+    color: #20bf6b;
+}
+
+a.menu-search-link:hover {
+    color: #20bf6b;
+}
+
+.footer-nav-made {
+    font-size: 0.7em;
+    padding-top: 0.5%;
+}
+
+
+/* --------------- Map ---------------*/
+
+#map {
+    width: 100%;
+    height: 100%;
+    margin-left: 2.5%;
+    border-radius: 3px;
+    box-shadow: 0px 4px 4px #1c1a19;
+}
+
+.popup {
+    max-width: 100px;
+    max-height: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-title {
+    color: #2c3e50;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.popup-picture {
+    text-align: center;
+}
+
+.popup-service {
+    position: relative;
+    top: -7px;
+    text-align: center;
+}
+
+.popup-link {
+    position: relative;
+    top: -17px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.loading {
+    color: #1c1a19;
+    font-size: 2em;
+    text-align: center;
+}
+
+
+/* --------------- Nav common ---------------*/
+
+.alert {
+    margin: 1% 0;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.alert-success {
+    color: #38ada9;
+}
+
+.alert-info {
+    color: #ff6100;
+}
+
+.alert-danger {
+    color: #ff0000;
+}
+
+.button-back {
+    top: 630px;
+    right: 525px;
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+.button-display {
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+a.button-back:hover {
+    color: #20bf6b;
+}
+
+a.button-display:hover {
+    color: #20bf6b;
+}
+
+td {
+    border-bottom: 5px solid white;
+}
+
+.list-title {
+    padding: 0 1%;
+}
+
+.head {
+    margin: 10.5%;
+    font-size: 0.9em;
+}
+
+.list-head,
+.head-content {
+    padding: 1%;
+}
+
+.head-content {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.list-picture {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px #1c1a19;
+}
+
+
+/* --------------- team jtmc ---------------*/
+
+.container_team {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1%;
+    padding-top: 100px;
+}
+
+.title-team {
+    display: flex;
+    margin: auto;
+    width: 400px;
+    font-size: 2em;
+    text-align: center;
+    color: #20bf6b;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.title-team-strong {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 900px;
+    margin: auto;
+    height: 450px;
+}
+
+.role,
+.name,
+.picture-ben,
+.picture-guy,
+.picture-laura,
+.picture-tayeb {
+    text-align: center;
+    margin: 2%;
+    padding: 3%;
+}
+
+.role {
+    width: 100%;
+    font-size: 0.9em;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 0.9em;
+    text-transform: capitalize;
+}
+
+.picture-ben,
+.picture-guy,
+.picture-laura,
+.picture-tayeb {
+    border-radius: 15px;
+    box-shadow: 0px 0px 4px #1c1a19;
+    margin-left: 30px;
+}
+
+.actors-team {
+    margin-top: 7%;
+    display: inline;
+}
+
+
+/* Transition */
+
+.ben {
+    position: relative;
+    color: transparent;
+}
+
+.actors-team:hover .scrum {
+    color: #20bf6b;
+    transition-duration: 0.5s;
+}
+
+.guy {
+    position: relative;
+    color: transparent;
+}
+
+.actors-team:hover .git {
+    color: #20bf6b;
+    transition-duration: 0.5s;
+}
+
+.laura {
+    position: relative;
+    color: transparent;
+}
+
+.actors-team:hover .owner {
+    color: #20bf6b;
+    transition-duration: 0.5s;
+}
+
+.tayeb {
+    position: relative;
+    color: transparent;
+}
+
+.actors-team:hover .lead {
+    color: #20bf6b;
+    transition-duration: 0.5s;
+}
+
+
+/* Blur */
+
+.hover01 figure img {
+    filter: blur(1px);
+    transition: .3s ease-in-out;
+}
+
+.hover01 figure:hover img {
+    filter: blur(0);
+}
+
+/* --------------- @media queries 1024px --------------*/
+
+@media only screen and (max-width:1025px){
+    body,
+    .wrapper {
+        width: 1025px;
+    }
+
+    .footer-nav,
+    .legals,
+    .container-account,
+    .container-account-con,
+    .container-account-store,
+    .container-add-store,
+    .container-store-show,
+    .container-account-reg,
+    .container-account-modif {
+        width: 1025px;
+    }
+
+.slogan-nav {
+    margin-left: 0px
+
+}
+
+#map {
+
+    margin-right: 10px;
+}
+
+/* --------------- @media queries 850px ---------------*/
+
+@media only screen and (max-width: 851px) {
+
+    body,
+    .wrapper {
+        width: 851px;
+    }
+
+    .footer-nav,
+    .legals,
+    .container-account,
+    .container-account-con,
+    .container-account-store,
+    .container-add-store,
+    .container-store-show,
+    .container-account-reg,
+    .container-account-modif {
+        width: 851px;
+    }
+
+    .header-nav-top-link,
+    .logo-web,
+    .title,
+    .search-engine,
+    .hamburger-content {
+        display: none;
+    }
+
+    .slogan-nav {
+        margin-left: 0px;
+        width: 55%;
+        flex-direction: column-reverse;
+    }
+
+    .slogan {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .header-nav {
+        background: none;
+    }
+
+    #map {
+        z-index: 1;
+        width: 85%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hamburger {
+        width: 26px;
+    }
+
+    .hamburger-button{
+        display: block;
+        margin-left: 250px;
+    }
+
+    .hamburger-sidebar,
+    .hamburger-overlay {
+        display: block;
+    }
+
+    .form-search-engine-city,
+    .menu-search-list,
+    .promotion {
+        padding: 2%;
+        margin: 2% 4% 5% 2%;
+        box-shadow: rgba(4, 0, 0, .4);
+    }
+
+    .sidebar {
+        transform: translateX(0);
+    }
+
+    .sidebar-open {
+        transform: translateX(118%);
+    }
+
+    .overlay {
+        transform: translateX(100%);
+    }
+
+    .overlay-open {
+        transform: translateX(0);
+    }
+
+    .search-city,
+    .menu-search-list {
+        padding-top: 5%;
+    }
+
+    .menu-search-list,
+    .menu-search-link,
+    .search-city,
+    .submit {
+        font-size: 0.8em;
+    }
+
+    .footer-nav {
+        margin-left: 0;
+    }
+
+    .container-account-store {
+        height: 100%;
+    }
+
+    .paraph-account,
+    .paraph-hook-reg {
+        margin-top: 2%;
+        font-size: 0.9em;
+    }
+
+    .title-account {
+        margin-top: 3%;
+        font-size: 1.5em;
+    }
+
+    .nav-account-link {
+        line-height: normal;
+        font-size: 1.2em;
+    }
+
+    .card-title {
+        font-size: 0.9em;
+    }
+
+    .card-text,
+    .card-link {
+        font-size: 0.8em;
+    }
+
+    .container-store-show {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-picture-show-desktop {
+        display: none;
+    }
+
+    .container-picture-show-mobile {
+        display: block;
+        justify-content: center;
+    }
+
+    .store-show-information {
+        margin-top: 5%;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .green-arrow-mobile {
+        position: relative;
+        top: 40px;
+        right: 250px;
+    }
+
+    .team {
+        width: 460px;
+        height: 850px;
+        flex-wrap: wrap;
+    }
+
+    .title-team {
+        display: inline-block;
+        font-size: 1.7em;
+    
+    }
+
+    .icon-picture-admin {
+        top: 30px;
+        left: 50px;
+    }
+
+    .actors-team {
+        margin-top: 0;
+        padding-right: 10px;
+    }
+
+    .headml h1 {
+        font-size: 1.5em;
+    }
+
+    .mention-texte {
+        font-size: 0.8em;
+    }
+
+    .denomination {
+        font-size: 0.9em;
+    }
+
+    .mention-title {
+        font-size: 1.2em;
+    }
+}
+
+
+
+/* --------------- @media queries 425px -----------------*/
+
+@media only screen and (max-width: 425px) {
+
+    body,
+    .wrapper {
+        width: 426px;
+    }
+
+    .footer-nav,
+    .legals,
+    .container-account,
+    .container-account-con,
+    .container-account-store,
+    .container-add-store,
+    .container-store-show,
+    .container-account-reg,
+    .container-account-modif {
+        width: 426px;
+    }
+
+    .header-nav-top-link,
+    .logo-web,
+    .title,
+    .search-engine,
+    .hamburger-content {
+        display: none;
+    }
+
+    .slogan-nav {
+        margin-left: 0px;
+        width: 55%;
+        flex-direction: column-reverse;
+    }
+
+    .slogan {
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .logo-mobile {
+        display: block;
+    }
+
+    .header-nav {
+        background: none;
+    }
+
+    #map {
+        z-index: 1;
+        width: 85%;
+        margin-left: 0;
+    }
+
+    .hamburger {
+        width: 26px;
+    }
+
+    .hamburger-button{
+        display: block;
+        margin-left: 0;
+    }
+
+    .hamburger-sidebar,
+    .hamburger-overlay {
+        display: block;
+    }
+
+    .form-search-engine-city,
+    .menu-search-list,
+    .promotion {
+        padding: 2%;
+        margin: 2% 4% 5% 2%;
+        box-shadow: rgba(4, 0, 0, .4);
+    }
+
+    .sidebar {
+        transform: translateX(0);
+    }
+
+    .sidebar-open {
+        transform: translateX(118%);
+    }
+
+    .overlay {
+        transform: translateX(100%);
+    }
+
+    .overlay-open {
+        transform: translateX(0);
+    }
+
+    .search-city,
+    .menu-search-list {
+        padding-top: 5%;
+    }
+
+    .menu-search-list,
+    .menu-search-link,
+    .search-city,
+    .submit {
+        font-size: 0.8em;
+    }
+
+    .footer-nav {
+        margin-left: 0;
+    }
+
+    .container-account-store {
+        height: 100%;
+    }
+
+    .paraph-account,
+    .paraph-hook-reg {
+        margin-top: 2%;
+        font-size: 0.9em;
+    }
+
+    .title-account {
+        margin-top: 3%;
+        font-size: 1.5em;
+    }
+
+    .card-title {
+        font-size: 0.9em;
+    }
+
+    .card-text,
+    .card-link {
+        font-size: 0.8em;
+    }
+
+    .container-store-show {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-picture-show-desktop {
+        display: none;
+    }
+
+    .container-picture-show-mobile {
+        display: block;
+        justify-content: center;
+    }
+
+    .store-show-information {
+        margin-top: 5%;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .green-arrow-mobile {
+        position: relative;
+        top: 40px;
+        right: 250px;
+    }
+
+    .team {
+        width: 460px;
+        height: 850px;
+        flex-wrap: wrap;
+    }
+
+    .title-team {
+        margin-left: 40px;
+        font-size: 1.7em;
+    }
+
+    .icon-picture-admin {
+        top: 30px;
+        left: 50px;
+    }
+
+    .actors-team {
+        margin-top: 0;
+        padding-right: 10px;
+    }
+
+    .headml h1 {
+        font-size: 1.5em;
+    }
+
+    .mention-texte {
+        font-size: 0.8em;
+    }
+
+    .denomination {
+        font-size: 0.9em;
+    }
+
+    .mention-title {
+        font-size: 1.2em;
+    }
+}

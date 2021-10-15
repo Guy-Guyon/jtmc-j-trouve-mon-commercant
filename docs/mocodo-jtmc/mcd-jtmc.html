@@ -1,0 +1,82 @@
+<html>
+<head>
+<meta charset='utf-8'>
+<style>
+  #mld .relation { font-variant: small-caps; font-weight: bold }
+  #mld .primary { text-decoration: underline }
+  #mld .foreign { font-style: oblique }
+  #mld .normal { }
+</style>
+</head>
+<body>
+<div id='mld'>
+<!--
+<div>
+  <span class='relation'>OPEN DAYS</span> (
+    <span class='primary'>days</span>
+  )
+</div>
+-->
+<div>
+  <span class='relation'>IS OPEN</span> (
+    <span class='foreign primary'>id</span>,
+    <span class='foreign primary'>days</span>
+  )
+</div>
+<!--
+<div>
+  <span class='relation'>COMMERCIAL SERVICE</span> (
+    <span class='primary'>service types</span>
+  )
+</div>
+-->
+<div>
+  <span class='relation'>MUST HAVE</span> (
+    <span class='foreign primary'>id</span>,
+    <span class='foreign primary'>payment types</span>
+  )
+</div>
+<div>
+  <span class='relation'>STORE</span> (
+    <span class='primary'>id</span>,
+    <span class='normal'>store activity</span>,
+    <span class='normal'>picture</span>,
+    <span class='normal'>name</span>,
+    <span class='normal'>siret</span>,
+    <span class='normal'>address</span>,
+    <span class='normal'>postal code</span>,
+    <span class='normal'>email</span>,
+    <span class='normal'>phone</span>,
+    <span class='normal'>website</span>,
+    <span class='normal'>open days</span>,
+    <span class='normal'>open hours</span>,
+    <span class='normal'>descrition</span>,
+    <span class='normal'>latitude</span>,
+    <span class='normal'>longitude</span>,
+    <span class='foreign'>email.1</span>
+  )
+</div>
+<div>
+  <span class='relation'>CAN HAVE</span> (
+    <span class='foreign primary'>id</span>,
+    <span class='foreign primary'>service types</span>
+  )
+</div>
+<!--
+<div>
+  <span class='relation'>INFORMATION PAYMENT</span> (
+    <span class='primary'>payment types</span>
+  )
+</div>
+-->
+<div>
+  <span class='relation'>USER</span> (
+    <span class='primary'>email</span>,
+    <span class='normal'>password</span>,
+    <span class='normal'>firstname</span>,
+    <span class='normal'>lastname</span>
+  )
+</div>
+</div>
+</body>
+</html>
